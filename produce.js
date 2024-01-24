@@ -6,7 +6,6 @@ const baseState =
         title: "Learn TypeScript",
         done: true
     },
-    
     {
         title: "Try Immer",
         done: false
