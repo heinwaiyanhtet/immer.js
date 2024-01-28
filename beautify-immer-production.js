@@ -1,15 +1,21 @@
 "use strict";
+
 var ne = Object.defineProperty;
 var xe = Object.getOwnPropertyDescriptor;
 var be = Object.getOwnPropertyNames;
 var Te = Object.prototype.hasOwnProperty;
 
-var Ae = (e, t) => {
-        for (var r in t) ne(e, r, {
+var Ae = (e, t) =>
+
+    {
+        for (var r in t) 
+        
+        ne(e, r, {
             get: t[r],
             enumerable: !0
         })
     },
+
     Ie = (e, t, r, n) => {
         if (t && typeof t == "object" || typeof t == "function")
             for (let i of be(t)) !Te.call(e, i) && i !== r && ne(e, i, {
@@ -18,10 +24,14 @@ var Ae = (e, t) => {
             });
         return e
     };
+
+
 var De = e => Ie(ne({}, "__esModule", {
     value: !0
 }), e);
+
 var Be = {};
+
 Ae(Be, {
     Immer: () => J,
     applyPatches: () => Ce,
@@ -43,7 +53,10 @@ Ae(Be, {
     setAutoFreeze: () => je,
     setUseStrictShallowCopy: () => ze
 });
+
 module.exports = De(Be);
+
+
 var z = Symbol.for("immer-nothing"),
     N = Symbol.for("immer-draftable"),
     f = Symbol.for("immer-state");
@@ -51,6 +64,7 @@ var z = Symbol.for("immer-nothing"),
 function h(e, ...t) {
     throw new Error(`[Immer] minified error nr: ${e}. Full error at: https://bit.ly/3cXEKWf`)
 }
+
 var j = Object.getPrototypeOf;
 
 function O(e) {
