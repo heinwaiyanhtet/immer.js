@@ -13,7 +13,6 @@ const usersById_v2 = produce(usersById_v1, draft => {
     draft.get("michel").country = "UK"
 })
 
-
 console.log(usersById_v1.get("michel").country); // Output: NL
 console.log(usersById_v2.get("michel").country); // Output: UK
 
